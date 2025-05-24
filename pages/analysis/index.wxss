@@ -1,0 +1,10 @@
+.container {
+  padding: 20rpx;
+  color: #000;
+}
+.container {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
+  height: 100vh;           /* 占满整个屏幕高度 */
+}
