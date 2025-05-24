@@ -1,6 +1,14 @@
+// pages/analysis/analysis.js
+
 Page({
-  data: {},
+  data: {
+    totalAssets: 1250,
+    monthlyIncome: 5000,
+    monthlyExpense: 750
+  },
+
   onLoad() {
-    console.log("首页加载成功");
+    // 可添加图表数据请求等逻辑
   }
 });
+

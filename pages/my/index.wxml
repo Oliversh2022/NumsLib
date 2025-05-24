@@ -1,3 +1,36 @@
+
 <view class="container">
-  <text>这是个人页面</text>
+
+<!-- 用户头像和昵称 -->
+<view class="user-info">
+  <image class="avatar" src="{{userInfo.avatarUrl}}" mode="aspectFill" />
+  <text class="nickname">{{userInfo.nickName}}</text>
+</view>
+
+<!-- 资产概览 -->
+<view class="asset-summary">
+  <text class="title">资产总览</text>
+  <view class="amount">¥{{totalAssets}}</view>
+</view>
+
+<!-- 快捷功能入口 -->
+<view class="quick-actions">
+  <view class="action-item" bindtap="goToDetails">
+    <image src="/images/details.png" />
+    <text>资产明细</text>
+  </view>
+  <view class="action-item" bindtap="goToRecords">
+    <image src="/images/record.png" />
+    <text>收支记录</text>
+  </view>
+  <view class="action-item" bindtap="goToGoals">
+    <image src="/images/goals.png" />
+    <text>理财目标</text>
+  </view>
+  <view class="action-item" bindtap="goToSettings">
+    <image src="/images/settings.png" />
+    <text>设置</text>
+  </view>
+</view>
+
 </view>
