@@ -1,0 +1,67 @@
+
+.container {
+    background-color: #ffffff;
+    min-height: 100vh;
+    padding: 32rpx;
+}
+.card {
+    background-color: #ffd700;
+    border-radius: 20rpx;
+    padding: 32rpx;
+    margin-bottom: 32rpx;
+    box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.05);
+}
+.summary-card .summary-row {
+    font-size: 28rpx;
+    margin-bottom: 16rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.income {
+    color: green;
+}
+.expense {
+    color: red;
+}
+.balance {
+    color: #333;
+    font-weight: bold;
+}
+.section-title {
+    font-size: 30rpx;
+    font-weight: bold;
+    margin-bottom: 24rpx;
+    color: #333;
+}
+.record-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24rpx 0;
+    border-bottom: 1rpx solid #eee;
+}
+.left .category {
+    font-size: 28rpx;
+    font-weight: bold;
+    margin-bottom: 8rpx;
+}
+.left .note {
+    font-size: 24rpx;
+    color: rgb(0, 0, 0);
+}
+.right .amount {
+    font-size: 30rpx;
+}
+.right .income {
+    color: green;
+}
+.right .expense {
+    color: red;
+}
+.empty {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 26rpx;
+    padding: 40rpx 0;
+}
+

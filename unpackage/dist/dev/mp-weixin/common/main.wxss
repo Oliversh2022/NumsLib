@@ -1,0 +1,12 @@
+
+.safe-area-top {
+    padding-top: 25px; /* 默认 44px 防止第一次没取到值 */
+}
+/* common.wxss */
+.btn-primary {
+    background-color: #ffd600;
+    color: #000;
+    border-radius: 8px;
+    padding: 10px;
+}
+

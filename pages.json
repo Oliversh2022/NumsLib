@@ -1,0 +1,72 @@
+{
+	"pages": [
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationStyle": "custom",
+				"usingComponents": {}
+			}
+		},
+		{
+			"path": "pages/add/index",
+			"style": {
+				"navigationStyle": "custom",
+				"usingComponents": {}
+			}
+		},
+		{
+			"path": "pages/analysis/index",
+			"style": {
+				"navigationBarTitleText": "资产分析",
+				"usingComponents": {}
+			}
+		},
+		{
+			"path": "pages/my/index",
+			"style": {
+				"navigationBarTitleText": "资产中心",
+				"navigationBarBackgroundColor": "#00C853",
+				"navigationBarTextStyle": "white",
+				"usingComponents": {}
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#4CAF50",
+		"backgroundColor": "#ffffff",
+		"borderStyle": "white",
+		"list": [
+			{
+				"pagePath": "pages/home/index",
+				"text": "首页",
+				"iconPath": "static/images/home.png",
+				"selectedIconPath": "static/images/home_selected.png"
+			},
+			{
+				"pagePath": "pages/add/index",
+				"text": "记账",
+				"iconPath": "static/images/add.png",
+				"selectedIconPath": "static/images/add_selected.png"
+			},
+			{
+				"pagePath": "pages/analysis/index",
+				"text": "分析",
+				"iconPath": "static/images/analysis.png",
+				"selectedIconPath": "static/images/analysis_selected.png"
+			},
+			{
+				"pagePath": "pages/my/index",
+				"text": "个人",
+				"iconPath": "static/images/my.png",
+				"selectedIconPath": "static/images/my_selected.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTitleText": "智能记账本",
+		"navigationBarBackgroundColor": "#4CAF50",
+		"navigationBarTextStyle": "white"
+	},
+	"subPackages": []
+}
