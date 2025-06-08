@@ -1,0 +1,40 @@
+<view class="safe-area-top">
+  <!-- 你的内容 -->
+  <view class="container">
+  <view class="card summary-card">
+    <view class="summary-row">
+      <text>本月收入：</text><text class="income">￥{{income}}</text>
+    </view>
+    <view class="summary-row">
+      <text>本月支出：</text><text class="expense">￥{{expense}}</text>
+    </view>
+    <view class="summary-row">
+      <text>结余：</text><text class="balance">￥{{balance}}</text>
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="section-title">账单记录</view>
+
+    <block wx:if="{{records.length}}">
+      <view wx:for="{{records}}" wx:key="index" class="record-item">
+        <view class="left">
+          <view class="category">{{item.category}}</view>
+          <view class="note">{{item.note}}</view>
+        </view>
+        <view class="right">
+          <view class="amount {{item.type === '收入' ? 'income' : 'expense'}}">
+            {{item.type === '收入' ? '+' : '-'}}{{item.amount}}
+          </view>
+        </view>
+      </view>
+    </block>
+
+    <block wx:else>
+      <view class="empty">暂无账单</view>
+    </block>
+  </view>
+</view>
+
+
+</view>
